@@ -78,5 +78,18 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+// a route to handle an about us page with info and image
+app.get('/about', (req, res) => {
+  return res.json({
+    name: 'Eric Kim',
+    paragraphs: [
+      "Hi! I'm Eric, and I am studying Computer Science at NYU. I love creating full stack web applications, especially when it's projects like these!",
+      "Outside of anything computer science, I love exploring film and art history, reading books, and trying new restaurants.",
+      "I love creating projects, and if you are interested in creating projects as well, reach out to me!"
+    ],
+    imageUrl: "https://i.imgur.com/oaJZSg9.jpeg",
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
