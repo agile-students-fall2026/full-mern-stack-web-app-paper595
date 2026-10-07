@@ -1,4 +1,4 @@
-# Full MERN-Stack Web App Exercise
+# Full MERN-Stack Web App Exercise - Eric Kim
 
 This is a so-called "`monorepo`" - a single repository containing all the components necessary to build and run an app:
 
